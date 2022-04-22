@@ -1,1 +1,7 @@
 git clone https://github.com/hidarif/ide_entry_test.git
+
+//push 
+
+git add .
+git commit -m "Pesan Commit"
+git push origin master
