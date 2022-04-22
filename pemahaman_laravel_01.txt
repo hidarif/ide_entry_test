@@ -1,0 +1,4 @@
+.env berisi konfigurasi atau pengaturan pengaturan untuk aplikasi kita di laravel, dan semua pengaturan di gabung ke dalam satu file yaitu .env, dasar nya yang sering di gunakan adalah pengaturan App seperti nama aplikasi, status debug aplikasi, app key dan juga konfigurasi database mulai dari database yang digunakan seperti MySQL, SQL Server, Postgree ataupun yang lainnya lalu host, port, nama database dan username password untuk masuk ke dalam database tersebut
+
+direktori config
+sebenernya semua pengaturan database itu ada pada direktori config seperti email, auth, database dan lainnya tetapi secara default yang di gunakan itu pada file .env jika kita ingin custom bisa di ubah pada file yang ada pada folder configurasi contoh nya mengubah autentikasi dan database jika ingin menggunakan lebih dari 1 database 

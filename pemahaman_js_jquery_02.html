@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Pemahanaman JS JQuery 1</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+
+<script src="./assets/jquery.min.js"></script>
+<script src="./assets/sweetalert2.all.min.js"></script>
+<script>
+    $.ajax({
+            type: "GET",
+            url: "https://test-ujian-masuk.infraedukasi.com",
+            dataType: 'json',
+            beforeSend: function () { 
+                Swal.fire('Please wait');
+                Swal.showLoading();
+            },
+            success: function (data) {
+                console.log(data)
+            },
+            complete: function () { // Set our complete callback, adding the .hidden class and hiding the spinner.
+                Swal.close();
+            },
+        });
+</script>
+</html>

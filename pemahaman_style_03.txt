@@ -1,0 +1,10 @@
+untuk memanggil class box yang ada di dalam wrapper jika tidak di dalam wrapper tidak bisa di berfungsi,
+
+untuk penulisan style berubah menjadi 
+
+.wrapper 
+    .box {
+        height: 100px;
+        width: 100px;
+        border: 1px solid green;
+    }
